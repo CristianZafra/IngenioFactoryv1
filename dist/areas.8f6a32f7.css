@@ -1,0 +1,429 @@
+.areas-child {
+  background-color: var(--color-whitesmoke);
+  align-self: stretch;
+  height: 844px;
+  display: none;
+  position: relative;
+}
+
+.component-2-icon {
+  z-index: 1;
+  width: 31px;
+  height: 31px;
+  position: relative;
+}
+
+.navigation {
+  padding: 0 var(--padding-11xs);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.areas1 {
+  font-size: inherit;
+  z-index: 1;
+  min-width: 95px;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+
+.areas-wrapper {
+  padding: 0 var(--padding-xl) 0 var(--padding-3xl);
+  flex-direction: row;
+  justify-content: center;
+  align-self: stretch;
+  align-items: flex-start;
+  display: flex;
+}
+
+.bodega-child {
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 4px 6.4px 3px #0003;
+  margin: 0 !important;
+}
+
+.bodega-1-icon {
+  object-fit: cover;
+  z-index: 1;
+  width: 60px;
+  height: 75.6px;
+  position: relative;
+}
+
+.assembly-area {
+  padding: 0 var(--padding-7xl) 0 var(--padding-8xl);
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+}
+
+.bodega1 {
+  z-index: 1;
+  min-width: 78px;
+  display: inline-block;
+  position: relative;
+}
+
+.detailed-cabin {
+  padding: 0 var(--padding-mid) 0 var(--padding-lg);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.materia-prima {
+  font-size: var(--font-size-base);
+  color: var(--color-lightgray);
+  z-index: 1;
+  min-width: 113px;
+  display: inline-block;
+  position: relative;
+}
+
+.bodega, .cabin-details {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.bodega {
+  padding: var(--padding-base) var(--padding-2xs) var(--padding-smi) var(--padding-3xs);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+  flex: 1;
+  align-items: flex-end;
+  gap: 7.4px;
+  min-width: 87px;
+  position: relative;
+}
+
+.chasis-child {
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 4px 6.4px 3px #0003;
+  margin: 0 !important;
+}
+
+.ensamble-chasis-1 {
+  object-fit: cover;
+  z-index: 1;
+  width: 80px;
+  height: 65.5px;
+  position: relative;
+}
+
+.chasis1 {
+  z-index: 1;
+  min-width: 71px;
+  display: inline-block;
+  position: relative;
+}
+
+.terminal-point {
+  padding: 0 var(--padding-8xs) 0 var(--padding-7xs);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.ensamble {
+  font-size: var(--font-size-base);
+  color: var(--color-lightgray);
+  z-index: 1;
+  min-width: 82px;
+  display: inline-block;
+  position: relative;
+}
+
+.chassis-details {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chasis, .chassis-details, .chassis-production {
+  align-items: flex-start;
+  display: flex;
+}
+
+.chasis {
+  padding: var(--padding-base) var(--padding-7xl) var(--padding-smi);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+  flex-direction: column;
+  flex: .7257;
+  justify-content: flex-start;
+  gap: 17.5px;
+  min-width: 87px;
+  position: relative;
+}
+
+.chassis-production {
+  justify-content: center;
+  align-self: stretch;
+  gap: var(--gap-34xl);
+  flex-direction: row;
+}
+
+.cabina-child {
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 4px 6.4px 3px #0003;
+  margin: 0 !important;
+}
+
+.ensamble-cabina-1 {
+  object-fit: cover;
+  z-index: 1;
+  width: 70px;
+  height: 70.3px;
+  position: relative;
+}
+
+.ensamble-cabina-1-wrapper {
+  padding: 0 var(--padding-7xs);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.cabina1 {
+  z-index: 1;
+  min-width: 72px;
+  display: inline-block;
+  position: relative;
+}
+
+.cabina-wrapper {
+  padding: 0 var(--padding-8xs);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.ensamble1 {
+  font-size: var(--font-size-base);
+  color: var(--color-lightgray);
+  z-index: 1;
+  min-width: 82px;
+  display: inline-block;
+  position: relative;
+}
+
+.cabina, .frame-parent {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.cabina {
+  padding: var(--padding-base) var(--padding-7xl) var(--padding-smi);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+  flex: .7257;
+  gap: 12.7px;
+  min-width: 87px;
+  position: relative;
+}
+
+.terminales-child {
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 4px 6.4px 3px #0003;
+  margin: 0 !important;
+}
+
+.ensamble-elemento-terminal-1 {
+  object-fit: cover;
+  z-index: 1;
+  width: 60px;
+  height: 73.3px;
+  position: relative;
+}
+
+.ensamble-elemento-terminal-1-wrapper {
+  padding: 0 var(--padding-8xl) 0 var(--padding-7xl);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.ensamble2, .terminales1 {
+  z-index: 1;
+  min-width: 113px;
+  display: inline-block;
+  position: relative;
+}
+
+.ensamble2 {
+  min-width: 82px;
+}
+
+.ensamble-wrapper {
+  padding: 0 var(--padding-base) 0 var(--padding-mini);
+  font-size: var(--font-size-base);
+  color: var(--color-lightgray);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.terminales-parent {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.chassis-production1, .terminales, .terminales-parent {
+  align-items: flex-start;
+  display: flex;
+}
+
+.terminales {
+  padding: var(--padding-base) var(--padding-3xs) var(--padding-smi) var(--padding-2xs);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  gap: 9.7px;
+  min-width: 87px;
+  position: relative;
+}
+
+.chassis-production1 {
+  justify-content: center;
+  align-self: stretch;
+  gap: var(--gap-34xl);
+  flex-direction: row;
+}
+
+.navigation-parent, .production-process, .website-layout {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.production-process {
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-100);
+  flex-direction: column;
+  align-self: stretch;
+  gap: 48px;
+}
+
+.navigation-parent, .website-layout {
+  max-width: 100%;
+}
+
+.navigation-parent {
+  flex-direction: column;
+  flex: 1;
+  gap: 58px;
+}
+
+.website-layout {
+  padding: 0 35px 0 var(--padding-15xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-jura);
+  flex-direction: row;
+  align-self: stretch;
+}
+
+.image-region-child {
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-crimson);
+  border: 1px solid var(--color-crimson);
+  box-sizing: border-box;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.image-region-item {
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-200);
+  z-index: 2;
+  width: 203px;
+  height: 6px;
+  position: absolute;
+  top: 83px;
+  left: 93px;
+}
+
+.areas, .image-region {
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.image-region {
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-crimson);
+  border: 1px solid var(--color-crimson);
+  z-index: 1;
+  align-self: stretch;
+  height: 107px;
+}
+
+.areas {
+  background-color: var(--color-whitesmoke);
+  padding: var(--padding-39xl) 0 0;
+  letter-spacing: normal;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 136px;
+  width: 100%;
+  line-height: normal;
+  display: flex;
+  overflow: hidden;
+}
+
+@media screen and (width <= 156px) {
+  .cabina, .chasis {
+    flex: 1;
+  }
+}
+/*# sourceMappingURL=areas.8f6a32f7.css.map */

@@ -1,0 +1,335 @@
+.roles-child {
+  align-self: stretch;
+  height: 844px;
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  display: none;
+}
+.component-2-icon3 {
+  height: 31px;
+  width: 31px;
+  position: relative;
+  z-index: 1;
+}
+.component {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-7xs);
+}
+.roles1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 91px;
+  z-index: 1;
+}
+.page-header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-6xl);
+  font-size: var(--font-size-13xl);
+  color: var(--color-dimgray);
+}
+.product-owner-responsibilities {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.product-owner-1 {
+  height: 89.2px;
+  width: 40px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.development-team {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 33px 0 32px;
+}
+.product-owner1 {
+  position: relative;
+  display: inline-block;
+  min-width: 105px;
+  z-index: 1;
+}
+.product-owner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-sm) var(--padding-4xl)
+    var(--padding-mini);
+  box-sizing: border-box;
+  position: relative;
+  gap: 8.8px;
+  min-width: 87px;
+  cursor: pointer;
+  z-index: 1;
+}
+.scrum-master-responsibilities {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.scrum-master-1 {
+  height: 93.8px;
+  width: 40px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.scrum-team-detail {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 31px 0 30px;
+}
+.scrum-master1 {
+  position: relative;
+  display: inline-block;
+  min-width: 101px;
+  z-index: 1;
+}
+.scrum-master {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-base) var(--padding-4xl)
+    var(--padding-mid);
+  box-sizing: border-box;
+  position: relative;
+  gap: 6.2px;
+  min-width: 87px;
+  cursor: pointer;
+  z-index: 1;
+}
+.roles-detail,
+.roles-detail-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.roles-detail {
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-23xl);
+}
+.roles-detail-wrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 8px var(--padding-9xs);
+}
+.developers-3-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.developer-1-1 {
+  height: 85.1px;
+  width: 40px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.developer-1-1-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+}
+.developers,
+.developers-3 {
+  position: relative;
+  z-index: 1;
+}
+.developers {
+  display: inline-block;
+  min-width: 81px;
+}
+.developers-3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-7xl) var(--padding-3xl)
+    var(--padding-8xl);
+  box-sizing: border-box;
+  gap: 13.9px;
+  min-width: 87px;
+  cursor: pointer;
+}
+.developers-4-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.developer-4-1 {
+  height: 70.4px;
+  width: 40px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.developer-4-1-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+}
+.developers1 {
+  position: relative;
+  display: inline-block;
+  min-width: 81px;
+  z-index: 1;
+}
+.developers-3-parent,
+.developers-4 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.developers-4 {
+  flex-direction: column;
+  padding: var(--padding-6xl) var(--padding-7xl) var(--padding-3xl)
+    var(--padding-8xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: 20.6px;
+  min-width: 87px;
+  cursor: pointer;
+  z-index: 1;
+}
+.developers-3-parent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-23xl);
+}
+.team-roles-inner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xs);
+}
+.page-structure,
+.team-roles,
+.team-roles-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.team-roles {
+  flex: 1;
+  flex-direction: column;
+  gap: 52px;
+}
+.page-structure {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 40px 0 var(--padding-17xl);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-100);
+  font-family: var(--font-jura);
+}
+.rectangle-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-lightseagreen);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+.page-shape {
+  position: absolute;
+  top: 83px;
+  left: 93px;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-200);
+  width: 203px;
+  height: 6px;
+  z-index: 2;
+}
+.frame-footer,
+.roles {
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frame-footer {
+  align-self: stretch;
+  height: 107px;
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-lightseagreen);
+  z-index: 1;
+}
+.roles {
+  width: 100%;
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-39xl) 0 0;
+  box-sizing: border-box;
+  gap: 130px;
+  line-height: normal;
+  letter-spacing: normal;
+}

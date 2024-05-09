@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="/areas.689f5f05.css">
+    <link rel="stylesheet" href="/roles.8452f360.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap">
+  </head>
+  <body>
+    <div class="roles">
+      <div class="roles-child"></div>
+      <section class="page-structure">
+        <div class="team-roles">
+          <div class="component">
+            <a href="/index.html">
+              <img class="component-2-icon3" loading="lazy" alt="" src="/component-2.141aa094.svg">
+            </a>
+          </div>
+          <div class="page-header">
+            <h1 class="roles1">Roles</h1>
+          </div>
+          <div class="roles-detail-wrapper">
+            <div class="roles-detail">
+              <div class="product-owner" id="productOwnerContainer">
+                <div class="product-owner-responsibilities"></div>
+                <div class="development-team">
+                  <img class="product-owner-1" loading="lazy" alt="" src="/product-owner-1@2x.84a16c6b.png">
+                </div>
+                <b class="product-owner1">Product Owner</b>
+              </div>
+              <div class="scrum-master" id="scrumMasterContainer">
+                <div class="scrum-master-responsibilities"></div>
+                <div class="scrum-team-detail">
+                  <img class="scrum-master-1" loading="lazy" alt="" src="/scrum-master-1@2x.b20ecacb.png">
+                </div>
+                <b class="scrum-master1">Scrum Master</b>
+              </div>
+            </div>
+          </div>
+          <div class="team-roles-inner">
+            <div class="developers-3-parent">
+              <div class="developers-3" id="developers3Container">
+                <div class="developers-3-child"></div>
+                <div class="developer-1-1-wrapper">
+                  <img class="developer-1-1" loading="lazy" alt="" src="/developer-1-1@2x.549c5200.png">
+                </div>
+                <b class="developers">Developers</b>
+              </div>
+              <div class="developers-4" id="developers4Container">
+                <div class="developers-4-child"></div>
+                <div class="developer-4-1-wrapper">
+                  <img class="developer-4-1" loading="lazy" alt="" src="/developer-4-1@2x.64621e52.png">
+                </div>
+                <b class="developers1">Developers</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="frame-footer">
+        <div class="rectangle-div"></div>
+        <div class="page-shape"></div>
+      </footer>
+    </div>
+
+    <script>var productOwnerContainer = document.getElementById("productOwnerContainer");
+if (productOwnerContainer) productOwnerContainer.addEventListener("click", function(e) {
+    window.location.href = "./areas.html";
+});
+var scrumMasterContainer = document.getElementById("scrumMasterContainer");
+if (scrumMasterContainer) scrumMasterContainer.addEventListener("click", function(e) {
+    window.location.href = "./areas.html";
+});
+var developers3Container = document.getElementById("developers3Container");
+if (developers3Container) developers3Container.addEventListener("click", function(e) {
+    window.location.href = "./areas.html";
+});
+var developers4Container = document.getElementById("developers4Container");
+if (developers4Container) developers4Container.addEventListener("click", function(e) {
+    window.location.href = "./areas.html";
+});
+
+</script>
+  <script src="/roles.5e6c90be.js"></script></body>
+</html>

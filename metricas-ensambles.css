@@ -1,0 +1,325 @@
+.metricas-bodega-child {
+  align-self: stretch;
+  height: 844px;
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  display: none;
+}
+.component-2-icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  z-index: 1;
+}
+.bodega2 {
+  margin: 0;
+  position: absolute;
+  top: 27px;
+  left: 97px;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 125px;
+  z-index: 1;
+}
+.branding {
+  height: 65px;
+  flex: 1;
+  position: relative;
+}
+.branding-wrapper,
+.orden-cliente,
+.pedido-cliente {
+  box-sizing: border-box;
+  font-family: var(--font-jura);
+}
+.branding-wrapper {
+  width: 294px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-17xl) var(--padding-3xl);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-dimgray);
+}
+.orden-cliente,
+.pedido-cliente {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(--color-white);
+  height: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-100);
+  min-width: 97px;
+  z-index: 1;
+}
+.pedido-cliente {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) 9.6px 75px;
+}
+.orden-cliente {
+  flex: 0.9495;
+  padding: 9px 12.9px 77px;
+}
+.client-orders,
+.client-orders-wrapper,
+.inventario-bodega,
+.orden-cliente {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.transaccion-bodega {
+  /* Estilos para la transacción en la bodega */
+  width: 100%;
+  background-color: #F3F3F3;
+  padding: 0px;
+  margin-bottom: 0px;
+  text-align: center; /* Centrar el texto */
+  font-size: 18px; /* Aumentar el tamaño de la letra */
+  font-family: 'Jura', sans-serif; /* Usar la fuente Jura */
+}
+
+.transaccion-bodega p {
+  /* Estilos para los párrafos dentro de la transacción */
+  margin: 2px 0; /* Agregar espacio entre los párrafos */
+  font-weight: bold; /* Agregar negrita al texto */
+}
+
+  .inventario-bodega-wrapper table {
+    background-color: white; /* Fondo blanco */
+    overflow-x: auto; /* Desplazamiento horizontal */
+    overflow-y: auto; /* Desplazamiento vertical */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: block; /* Necesario para que overflow-x funcione */
+    max-height: 336px; /* Limita la altura a 262px */
+  }
+  .inventario-bodega-wrapper table input[type="number"],
+  .inventario-bodega-wrapper table input[type="text"] {
+    width: 80%; /* Ajusta este valor según tus necesidades */
+  }
+  .inventario-bodega-wrapper th, .inventario-bodega-wrapper td {
+    white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+    text-align: center; /* Alineación centrada */
+    padding: 1px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde de 1px sólido */
+    min-width: 60px; /* Ancho mínimo de 100px */
+  }
+.client-orders {
+  flex: 1;
+  gap: var(--gap-2xs);
+}
+.client-orders-wrapper,
+.inventario-bodega {
+  box-sizing: border-box;
+}
+.client-orders-wrapper {
+  width: 379px;
+  padding: 0 var(--padding-15xl);
+  max-width: 100%;
+}
+.inventario-bodega-parent,
+.inventario1 {
+  position: absolute;
+  color: var(--color-gray-100);
+  text-align: center;
+}
+.inventario-bodega {
+  border: 0;
+  background-color: var(--color-white);
+  height: 262px;
+  width: auto;
+  outline: 0;
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  padding: 14.7px 126.8px var(--padding-mini);
+  font-family: var(--font-jura);
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-100);
+  z-index: 1;
+}
+.inventario-bodega-wrapper {
+  width: 379px;
+  padding: 0 var(--padding-15xl) var(--padding-8xs);
+  max-width: 100%;
+}
+.inventario-estadisticas {
+  max-width: 330px;
+  max-height: 400px;
+  overflow-x: auto; /* Permitir scroll horizontal */
+  overflow-y: auto; /* Permitir scroll vertical */
+}
+
+.inventario-estadisticas table {
+  width: 100%;
+  border-collapse: collapse;
+}hsdjkfh
+
+.inventario-estadisticas th,
+.inventario-estadisticas td {
+  background-color: rgb(109, 21, 21);
+  border: 1px solid #ccc; /* Borde sutil gris */
+  padding: 8px;
+}
+
+.inventario-estadisticas th {
+  text-align: left;
+}
+
+.estadisticas-bodega,
+.estadisticas-bodega-wrapper,
+.inventario-bodega-wrapper {
+  border: 0;
+  background-color: var(--color-white);
+  height: auto; /* Ajusta la altura según el contenido */
+  width: auto;
+  outline: 0;
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  padding: var(--padding-xs) var(--padding-15xl); /* Ajusta el padding según sea necesario */
+  font-family: var(--font-jura);
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-100);
+  z-index: 1;
+}
+.estadisticas-bodega {
+  border: 0;
+  background-color: var(--color-white);
+  height: auto; /* Ajusta la altura según el contenido */
+  width: auto;
+  outline: 0;
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  padding: var(--padding-xs) var(--padding-15xl); /* Ajusta el padding según sea necesario */
+  font-family: var(--font-jura);
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-100);
+  z-index: 1;
+}
+.estadisticas-bodega-wrapper {
+  width: 379px;
+  padding: 0 var(--padding-15xl) var(--padding-8xs);
+  max-width: 100%;
+}
+.resultado-tiempo {
+  border: 0;
+  background-color: var(--color-white);
+  height: auto; /* Ajusta la altura según el contenido */
+  width: auto;
+  outline: 0;
+  flex: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  padding: var(--padding-xs) var(--padding-15xl); /* Ajusta el padding según sea necesario */
+  font-family: var(--font-jura);
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-100);
+  z-index: 1;
+}
+.frame-item {
+  height: 79px;
+  width: 391px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(180, 32, 32, 0.25);
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-darkslategray);
+  box-sizing: border-box;
+  display: none;
+  max-width: 100%;
+}
+.conclude-child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-9xl);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.conclude1 {
+  position: relative;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 55px;
+  z-index: 1;
+}
+.conclude {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs) var(--padding-xl) var(--padding-xs)
+    var(--padding-2xl);
+  background-color: transparent;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.metricas-bodega,
+.rectangle-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.rectangle-group {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-darkslategray);
+  flex-direction: row;
+  padding: var(--padding-lg) var(--padding-57xl);
+  max-width: 100%;
+  z-index: 1;
+}
+.metricas-bodega {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 4px #000;
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-39xl) 0 0;
+  gap: var(--gap-2xs);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 165px) {
+  .orden-cliente {
+    flex: 1;
+  }
+}

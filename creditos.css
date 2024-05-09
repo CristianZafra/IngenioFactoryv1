@@ -1,0 +1,182 @@
+.recurso-5-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    top: 391px;
+    transform: scale(4.445);
+  }
+  .wrapper-recurso-5-1 {
+    position: absolute;
+    top: 844px;
+    left: -107px;
+    width: 571px;
+    height: 1236px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box,
+  .frame-child {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+  }
+  .box {
+    position: absolute;
+    top: -136px;
+    left: 630px;
+    background-color: #777;
+    width: 402px;
+    height: 844px;
+  }
+  .frame-child {
+    height: 173px;
+    width: 391px;
+    position: relative;
+    border-radius: var(--br-21xl) var(--br-21xl) 0 0;
+    background-color: var(--color-white);
+    display: none;
+    max-width: 100%;
+  }
+  .get-started-child {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-9xl);
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .get-started1 {
+    position: relative;
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+    min-width: 67px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  .get-started,
+  .rectangle-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .get-started {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-2xs) var(--padding-xl) var(--padding-xs)
+      var(--padding-2xl);
+    background-color: transparent;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  .rectangle-parent {
+    position: absolute;
+    top: 672px;
+    left: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: var(--br-21xl) var(--br-21xl) 0 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 65px var(--padding-57xl);
+    max-width: 100%;
+    z-index: 1;
+  }
+  .logo-area-child,
+  .logo-if-1 {
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .logo-area-child {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+  }
+  .logo-if-1 {
+    width: calc(100% - 18px);
+    top: 29px;
+    right: 9px;
+    left: 9px;
+    height: 87px;
+    object-fit: contain;
+    z-index: 1;
+  }
+  .logo-area {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .logo-area-wrapper {
+    position: absolute;
+    top: 237px;
+    left: 120px;
+    width: 151px;
+    height: 145px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+  .ingenio-factory {
+    margin: 0;
+    position: absolute;
+    top: 403px;
+    left: 67px;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    z-index: 1;
+  }
+  .donde-la-teora {
+    position: absolute;
+    top: 468px;
+    left: calc(50% - 155px);
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    width: 311px;
+    height: 52px;
+    z-index: 1;
+  }
+  .home {
+    width: 100%;
+    height: 844px;
+    position: relative;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-white);
+    overflow: hidden;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: var(--font-size-13xl);
+    color: var(--color-white);
+    font-family: var(--font-jura);
+  }
+  

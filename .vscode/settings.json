@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ee595ba7-af69-4bcf-a48a-a1646976bee8/resourceGroups/IngenioFactory_group-ba92/providers/Microsoft.Web/sites/ingeniofactory",
+    "appService.deploySubpath": "."
+}

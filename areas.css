@@ -1,0 +1,404 @@
+.areas-child {
+  align-self: stretch;
+  height: 844px;
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  display: none;
+}
+.component-2-icon {
+  height: 31px;
+  width: 31px;
+  position: relative;
+  z-index: 1;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs);
+}
+.areas1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 95px;
+  z-index: 1;
+}
+.areas-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-3xl);
+}
+.bodega-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.bodega-1-icon {
+  height: 75.6px;
+  width: 60px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.assembly-area {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-7xl) 0 var(--padding-8xl);
+}
+.bodega1 {
+  position: relative;
+  display: inline-block;
+  min-width: 78px;
+  z-index: 1;
+}
+.detailed-cabin {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 var(--padding-lg);
+}
+.materia-prima {
+  position: relative;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  color: var(--color-lightgray);
+  min-width: 113px;
+  z-index: 1;
+}
+.bodega,
+.cabin-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.bodega {
+  flex: 1;
+  align-items: flex-end;
+  padding: var(--padding-base) var(--padding-2xs) var(--padding-smi)
+    var(--padding-3xs);
+  box-sizing: border-box;
+  position: relative;
+  gap: 7.4px;
+  min-width: 87px;
+  cursor: pointer;
+  z-index: 1;
+}
+.chasis-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.ensamble-chasis-1 {
+  width: 80px;
+  height: 65.5px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.chasis1 {
+  position: relative;
+  display: inline-block;
+  min-width: 71px;
+  z-index: 1;
+}
+.terminal-point {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs) 0 var(--padding-7xs);
+}
+.ensamble {
+  position: relative;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  color: var(--color-lightgray);
+  min-width: 82px;
+  z-index: 1;
+}
+.chassis-details {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chasis,
+.chassis-details,
+.chassis-production {
+  display: flex;
+  align-items: flex-start;
+}
+.chasis {
+  flex: 0.7257;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-7xl) var(--padding-smi);
+  box-sizing: border-box;
+  position: relative;
+  gap: 17.5px;
+  min-width: 87px;
+  cursor: pointer;
+  z-index: 1;
+}
+.chassis-production {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-34xl);
+}
+.cabina-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.ensamble-cabina-1 {
+  height: 70.3px;
+  width: 70px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.ensamble-cabina-1-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-7xs);
+}
+.cabina1 {
+  position: relative;
+  display: inline-block;
+  min-width: 72px;
+  z-index: 1;
+}
+.cabina-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+}
+.ensamble1 {
+  position: relative;
+  font-size: var(--font-size-base);
+  display: inline-block;
+  color: var(--color-lightgray);
+  min-width: 82px;
+  z-index: 1;
+}
+.cabina,
+.frame-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cabina {
+  flex: 0.7257;
+  padding: var(--padding-base) var(--padding-7xl) var(--padding-smi);
+  box-sizing: border-box;
+  position: relative;
+  gap: 12.7px;
+  min-width: 87px;
+  cursor: pointer;
+  z-index: 1;
+}
+.terminales-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 6.4px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+}
+.ensamble-elemento-terminal-1 {
+  height: 73.3px;
+  width: 60px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.ensamble-elemento-terminal-1-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xl) 0 var(--padding-7xl);
+}
+.ensamble2,
+.terminales1 {
+  position: relative;
+  display: inline-block;
+  min-width: 113px;
+  z-index: 1;
+}
+.ensamble2 {
+  min-width: 82px;
+}
+.ensamble-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-base) 0 var(--padding-mini);
+  font-size: var(--font-size-base);
+  color: var(--color-lightgray);
+}
+.terminales-parent {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chassis-production1,
+.terminales,
+.terminales-parent {
+  display: flex;
+  align-items: flex-start;
+}
+.terminales {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-3xs) var(--padding-smi)
+    var(--padding-2xs);
+  box-sizing: border-box;
+  position: relative;
+  gap: 9.7px;
+  min-width: 87px;
+  cursor: pointer;
+  z-index: 1;
+}
+.chassis-production1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-34xl);
+}
+.navigation-parent,
+.production-process,
+.website-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.production-process {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 48px;
+  font-size: var(--font-size-xl);
+  color: var(--color-gray-100);
+}
+.navigation-parent,
+.website-layout {
+  max-width: 100%;
+}
+.navigation-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 58px;
+}
+.website-layout {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 35px 0 var(--padding-15xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-jura);
+}
+.image-region-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-crimson);
+  border: 1px solid var(--color-crimson);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+.image-region-item {
+  position: absolute;
+  top: 83px;
+  left: 93px;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-200);
+  width: 203px;
+  height: 6px;
+  z-index: 2;
+}
+.areas,
+.image-region {
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+.image-region {
+  align-self: stretch;
+  height: 107px;
+  border-radius: var(--br-6xl) var(--br-6xl) 0 0;
+  background-color: var(--color-crimson);
+  border: 1px solid var(--color-crimson);
+  z-index: 1;
+}
+.areas {
+  width: 100%;
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-39xl) 0 0;
+  gap: 136px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 156px) {
+  .cabina,
+  .chasis {
+    flex: 1;
+  }
+}

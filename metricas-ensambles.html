@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./metricas-bodega.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="metricas-bodega">
+      <div class="metricas-bodega-child"></div>
+      <section class="branding-wrapper">
+        <div class="branding">
+          <a href="areas.html">
+            <img
+              class="component-2-icon1"
+              loading="lazy"
+              alt=""
+              src="./public/component-2.svg"
+            />
+          </a>
+          <h1 class="bodega2">Ensamble</h1>
+        </div>
+        
+      </section>
+      <section class="client-orders-wrapper">
+        <div class="client-orders">
+          <input
+            class="pedido-cliente"
+            placeholder="Pedido Cliente"
+            type="text"
+          />
+          <input
+            class="orden-cliente"
+            placeholder="Orden Cliente"
+            type="text"
+          />
+        </div>
+      </section>
+      <div class="transaccion-bodega">
+        <p class="cliente">Inventario en proceso</p>
+    </div>
+      <section class="inventario-bodega-wrapper">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <table>
+          <thead>
+            <tr>
+                <th colspan="2">Detalle</th>
+                <th colspan="3">Salidas</th>
+                <th colspan="3">Entradas</th> <!-- Nuevas columnas de encabezado -->
+                <th>Final</th> <!-- Nueva columna de encabezado -->
+            </tr>
+            <tr>
+                <th>Elemento</th>
+                <th>Inv.Inic</th>
+                <th>I</th>
+                <th>II</th>
+                <th>III</th>
+                <th>Ent.I</th>
+                <th>Ent.II</th>
+                <th>Ent.III</th>
+                <th>Stock</th> <!-- Nueva columna de encabezado -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se agregarán las filas de manera dinámica -->
+        </tbody>
+    </table>
+</section>
+<script>
+    // Obtén los campos de entrada y salida
+    var invInicInputs = document.querySelectorAll('.invInic');
+    var salidaIInputs = document.querySelectorAll('.salidaI');
+    var salidaIIInputs = document.querySelectorAll('.salidaII');
+    var salidaIIIInputs = document.querySelectorAll('.salidaIII');
+    var entIInputs = document.querySelectorAll('.entI'); // Nuevo campo de entrada
+    var entIIInputs = document.querySelectorAll('.entII'); // Nuevo campo de entrada
+    var entIIIInputs = document.querySelectorAll('.entIII'); // Nuevo campo de entrada
+    var stockInputs = document.querySelectorAll('.stock');
+
+    // Asegúrate de que se actualice el stock cada vez que se cambie uno de los otros campos
+    invInicInputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+    salidaIInputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+    salidaIIInputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+    salidaIIIInputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+    entIInputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+    entIIInputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+    entIIIInputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+
+    // Obtén el cuerpo de la tabla donde quieres insertar las filas
+    var tbody = document.querySelector('tbody');
+
+    // Haz un bucle 30 veces
+    for (var i = 0; i < 30; i++) {
+        // Crea una nueva fila y celdas
+        var tr = document.createElement('tr');
+        var td1 = document.createElement('td');
+        var td2 = document.createElement('td');
+        var td3 = document.createElement('td');
+        var td4 = document.createElement('td');
+        var td5 = document.createElement('td');
+        var td6 = document.createElement('td');
+        var td7 = document.createElement('td'); // Nueva celda
+        var td8 = document.createElement('td'); // Nueva celda
+        var td10 = document.createElement('td');
+
+        // Crea el select y las opciones
+        var select = document.createElement('select');
+        select.name = "Codigo";
+        // Agrega la opción "Código" al principio
+        var defaultOption = document.createElement('option');
+        defaultOption.value = "";
+        defaultOption.text = "Código";
+        select.appendChild(defaultOption);
+
+        for (var j = 1; j <= 70; j++) {
+            var option = document.createElement('option');
+            option.value = "codigo" + j;
+            option.text = j <= 30 ? "M-EC" + String(j).padStart(3, '0') : "P-EC" + String(j - 30).padStart(3, '0');
+            select.appendChild(option);
+        }
+
+        // Crea los inputs
+        var input1 = document.createElement('input');
+        input1.type = "number";
+        input1.className = "invInic"; // Agregar clase para identificar este campo
+        var input2 = document.createElement('input');
+        input2.type = "number";
+        input2.className = "salidaI"; // Agregar clase para identificar este campo
+        var input3 = document.createElement('input');
+        input3.type = "number";
+        input3.className = "salidaII"; // Agregar clase para identificar este campo
+        var input4 = document.createElement('input');
+        input4.type = "number";
+        input4.className = "salidaIII"; // Agregar clase para identificar este campo
+        var input5 = document.createElement('input');
+        input5.type = "number";
+        input5.className = "entI"; // Agregar clase para identificar este campo
+        var input6 = document.createElement('input');
+        input6.type = "number";
+        input6.className = "entII"; // Agregar clase para identificar este campo
+        var input7 = document.createElement('input');
+        input7.type = "number";
+        input7.className = "entIII"; // Agregar clase para identificar este campo
+        var input8 = document.createElement('input');
+        input8.type = "number";
+        input8.className = "stock"; // Agregar clase para identificar este campo
+        input8.readOnly = true;
+
+        // Añade el select y los inputs a las celdas
+        td1.appendChild(select);
+        td2.appendChild(input1);
+        td3.appendChild(input2);
+        td4.appendChild(input3);
+        td5.appendChild(input4);
+        td6.appendChild(input5);
+        td7.appendChild(input6);
+        td8.appendChild(input7);
+        td10.appendChild(input8);
+
+        // Añade las celdas a la fila
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        tr.appendChild(td6);
+        tr.appendChild(td7);
+        tr.appendChild(td8);
+        tr.appendChild(td10);
+
+        // Añade la fila al cuerpo de la tabla
+        tbody.appendChild(tr);
+    }
+
+    function calculateStock() {
+        var totalStock = 0; // Variable para almacenar el stock total
+
+        // Recorrer cada fila de la tabla
+        var rows = document.querySelectorAll('tbody tr');
+        rows.forEach(function(row) {
+            var invInic = row.querySelector('.invInic');
+            var salidaI = row.querySelector('.salidaI');
+            var salidaII = row.querySelector('.salidaII');
+            var salidaIII = row.querySelector('.salidaIII');
+            var entI = row.querySelector('.entI'); // Nuevo campo de entrada
+            var entII = row.querySelector('.entII'); // Nuevo campo de entrada
+            var entIII = row.querySelector('.entIII'); // Nuevo campo de entrada
+            var stock = row.querySelector('.stock');
+
+            // Verificar que todos los campos necesarios estén presentes
+            if (invInic && salidaI && salidaII && salidaIII && entI && entII && entIII && stock) {
+                // Calcular el stock para esta fila
+                var invInicValue = parseFloat(invInic.value) || 0;
+                var salidaIValue = parseFloat(salidaI.value) || 0;
+                var salidaIIValue = parseFloat(salidaII.value) || 0;
+                var salidaIIIValue = parseFloat(salidaIII.value) || 0;
+                var entIValue = parseFloat(entI.value) || 0; // Nuevo campo de entrada
+                var entIIValue = parseFloat(entII.value) || 0; // Nuevo campo de entrada
+                var entIIIValue = parseFloat(entIII.value) || 0; // Nuevo campo de entrada
+                var currentStock = invInicValue - salidaIValue - salidaIIValue - salidaIIIValue + entIValue + entIIValue + entIIIValue;
+
+                // Mostrar el stock calculado en el campo correspondiente
+                stock.value = currentStock;
+
+                // Agregar el stock de esta fila al total
+                totalStock += currentStock;
+            }
+        });
+
+        // Actualizar el valor del stock total mostrado en la página
+        document.getElementById('totalStock').textContent = totalStock;
+    }
+
+    // Asociar la función calculateStock a los eventos de entrada
+    var inputs = document.querySelectorAll('input[type="number"]');
+    inputs.forEach(function(input) {
+        input.addEventListener('input', calculateStock);
+    });
+</script>
+        </table>
+      </section>
+      </section>
+          <div class="transaccion-bodega">
+            <style>
+              .inventario-estadisticas {
+                overflow-x: auto; /* Permitir scroll horizontal */
+                overflow-y: auto; /* Permitir scroll vertical */
+                width: 83%; /* Ocupa todo el ancho disponible */
+                display: block; /* Necesario para que overflow-x funcione */
+                max-height: 336px; /* Limita la altura a 336px */
+                margin-left: 31px; /* Mover la tabla 31px a la derecha */
+              }
+          
+              .inventario-estadisticas table {
+                width: 80%;
+              }
+          
+              .inventario-estadisticas th,
+              .inventario-estadisticas td {
+                white-space: nowrap; /* Evita que el texto se ajuste automáticamente */
+                text-align: center; /* Alineación centrada */
+                background-color: white;
+                border: 1px solid #ddd; /* Borde sutil gris */
+                padding: 2px;
+                min-width: 60px; /* Ancho mínimo de 100px */
+              }
+          
+              .inventario-estadisticas th {
+                text-align: center;
+              }
+            </style>
+
+            <p class="cliente">Control de tiempo</p>
+          </div>
+              <div class="inventario-estadisticas">
+              <table>
+                  <tr>
+                    <tr>
+                      <th colspan="1">Detalle</th>
+                      <th colspan="2">Tiempo</th>
+                      <th>Total</th>
+                    </tr> 
+                    <th>Act</th>
+                    <th>Inicial</th>
+                    <th>Final</th>
+                    <th>Tiempo</th>
+                  </tr>
+                <tbody id="newTableBody">
+                  <!-- Las filas serán agregadas por JavaScript -->
+                </tbody>
+              </table>
+            </section>
+              <script>
+                // Get the table body where you want to insert the rows
+                var tbody = document.getElementById('newTableBody');
+                
+                // Loop 10 times
+                for (var i = 0; i < 10; i++) {
+                  // Create a new row and cells
+                  var tr = document.createElement('tr');
+                  var td1 = document.createElement('td');
+                  var td2 = document.createElement('td');
+                  var td3 = document.createElement('td');
+                  var td4 = document.createElement('td');
+                
+                  // Set the activity number
+                  td1.textContent = i + 1;
+                
+                  // Create the inputs for start and end time
+                  var input1 = document.createElement('input');
+                  input1.type = "time";
+                  input1.id = "startTime" + i;
+                
+                  var input2 = document.createElement('input');
+                  input2.type = "time";
+                  input2.id = "endTime" + i;
+                
+                  // Create the input for the duration, set it as read only
+                  var input3 = document.createElement('input');
+                  input3.type = "text";
+                  input3.id = "duration" + i;
+                  input3.readOnly = true;
+                
+                  // Add the inputs to the cells
+                  td2.appendChild(input1);
+                  td3.appendChild(input2);
+                  td4.appendChild(input3);
+                
+                  // Add the cells to the row
+                  tr.appendChild(td1);
+                  tr.appendChild(td2);
+                  tr.appendChild(td3);
+                  tr.appendChild(td4);
+                
+                  // Add the row to the table body
+                  tbody.appendChild(tr);
+                }
+                function calculateTotalDuration() {
+                  var totalDuration = 0;
+                  for (var i = 0; i < 10; i++) {
+                    var duration = document.getElementById('duration' + i);
+                    if (duration) {
+                      totalDuration += parseInt(duration.value) || 0;
+        }
+    }
+    return totalDuration;
+}
+                // Update the calculateDuration function to handle multiple rows
+                function calculateDuration() {
+                  for (var i = 0; i < 10; i++) {
+                    var startTime = document.getElementById('startTime' + i);
+                    var endTime = document.getElementById('endTime' + i);
+                    var duration = document.getElementById('duration' + i);
+                
+                    if (startTime && endTime && duration) {
+                      var startTimeValue = new Date(`1970-01-01T${startTime.value}Z`);
+                      var endTimeValue = new Date(`1970-01-01T${endTime.value}Z`);
+                      var durationValue = endTimeValue - startTimeValue;
+                      // Convert duration from milliseconds to minutes
+                      var durationInMinutes = Math.round(durationValue / 1000 / 60);
+                      // Set the duration input's value to the duration in minutes
+                      duration.value = durationInMinutes;
+
+                    }
+                  }
+                      // Llamar a la función para calcular la suma total de la duración
+    var totalDuration = calculateTotalDuration();
+    // Mostrar el resultado en algún lugar del HTML
+    var totalDurationElement = document.getElementById('totalDuration');
+    if (totalDurationElement) {
+        totalDurationElement.textContent = totalDuration;
+    }
+}
+
+                // Associate the calculateDuration function to the input events
+                for (var i = 0; i < 10; i++) {
+                  var startTime = document.getElementById('startTime' + i);
+                  var endTime = document.getElementById('endTime' + i);
+                
+                  if (startTime && endTime) {
+                    startTime.oninput = calculateDuration;
+                    endTime.oninput = calculateDuration;
+                  }
+                }
+              </script>
+            </div>
+            <style>
+              /* Estilos para el texto resultado tiempo*/
+              .resultado-tiempo {
+                  font-family: 'Jura', sans-serif; /* Usar la fuente Jura */
+                  font-size: 20px; /* Tamaño de la letra */
+                  font-weight: bold; /* Negrita */
+                  color: #333; /* Color del texto */
+                   margin-left: 31px; /* Mover la tabla 31px a la derecha */
+              }
+          </style>
+            <div class="resultado-tiempo">
+              <p>Total Duration: <span id="totalDuration">0</span> minutes</p>
+            </div>
+            <style>
+              /* Estilos para el texto Total Stock */
+              .total-stock {
+                  font-family: 'Jura', sans-serif; /* Usar la fuente Jura */
+                  font-size: 20px; /* Tamaño de la letra */
+                  font-weight: bold; /* Negrita */
+                  color: #333; /* Color del texto */
+              }
+          </style>
+      <section class="estadisticas-bodega-wrapper">
+        <p class="total-stock">Total Stock: <span id="totalStock">0</span></p>
+      </section>
+      <footer class="rectangle-group">
+        <div class="frame-item"></div>
+        <button class="conclude">
+          <a href="creditos.html" class="conclude">
+          <img
+            class="conclude-child"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-21.svg"
+          />
+          <div class="conclude1">Conclude</div>
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>

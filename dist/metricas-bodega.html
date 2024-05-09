@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/areas.689f5f05.css">
+    <link rel="stylesheet" href="/metricas-bodega.f9af9b72.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="metricas-bodega">
+      <div class="metricas-bodega-child"></div>
+      <section class="branding-wrapper">
+        <div class="branding">
+          <a href="/areas.html">
+            <img class="component-2-icon1" loading="lazy" alt="" src="/component-2.141aa094.svg">
+          </a>
+          <h1 class="bodega2">Bodega</h1>
+        </div>
+        
+      </section>
+      <section class="client-orders-wrapper">
+        <div class="client-orders">
+          <input class="pedido-cliente" placeholder="Pedido Cliente" type="text">
+          <input class="orden-cliente" placeholder="Orden Cliente" type="text">
+        </div>
+      </section>
+      <div class="transaccion-bodega">
+        <p class="cliente">Inventario</p>
+    </div>
+      <section class="inventario-bodega-wrapper">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <table>
+          <tr>
+            </tr><tr>
+              <th colspan="2">Detalle</th>
+              <th colspan="3">Salidas</th>
+              <th>Final</th>
+            </tr> 
+            <th>Elemento</th>
+            <th>Inv.Inic</th>
+            <th>I</th>
+            <th>II</th>
+            <th>III</th>
+            <th>Stock</th> <!-- Nueva columna de encabezado -->
+          
+          <tbody>
+            <!-- Aquí se agregarán las filas de manera dinámica -->
+        </tbody>
+    </table>
+</section>
+            <script>// Obtén los campos de entrada
+var invInic = document.getElementById("invInic");
+var salidaI = document.getElementById("salidaI");
+var salidaII = document.getElementById("salidaII");
+var salidaIII = document.getElementById("salidaIII");
+var stock = document.getElementById("stock");
+// Asegúrate de que se actualice el stock cada vez que se cambie uno de los otros campos
+invInic.oninput = calculateStock;
+salidaI.oninput = calculateStock;
+salidaII.oninput = calculateStock;
+salidaIII.oninput = calculateStock;
+function calculateStock() {
+    // Calcula el stock y muéstralo en el campo de entrada correspondiente
+    stock.value = invInic.value - salidaI.value - salidaII.value - salidaIII.value;
+}
+
+</script>
+            <script>// Obtén el cuerpo de la tabla donde quieres insertar las filas
+var tbody = document.querySelector("tbody");
+// Haz un bucle 30 veces
+for(var i = 0; i < 30; i++){
+    // Crea una nueva fila y celdas
+    var tr = document.createElement("tr");
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");
+    var td4 = document.createElement("td");
+    var td5 = document.createElement("td");
+    var td6 = document.createElement("td");
+    // Crea el select y las opciones
+    var select = document.createElement("select");
+    select.name = "Codigo";
+    // Agrega la opción "Código" al principio
+    var defaultOption = document.createElement("option");
+    defaultOption.value = "";
+    defaultOption.text = "C\xf3digo";
+    select.appendChild(defaultOption);
+    for(var j = 1; j <= 70; j++){
+        var option = document.createElement("option");
+        option.value = "codigo" + j;
+        option.text = j <= 30 ? "M-EC" + String(j).padStart(3, "0") : "P-EC" + String(j - 30).padStart(3, "0");
+        select.appendChild(option);
+    }
+    // Crea los inputs
+    var input1 = document.createElement("input");
+    input1.type = "number";
+    input1.id = "invInic" + i;
+    input1.name = "Inv. Inic";
+    var input2 = document.createElement("input");
+    input2.type = "number";
+    input2.id = "salidaI" + i;
+    input2.name = "Salida I";
+    var input3 = document.createElement("input");
+    input3.type = "number";
+    input3.id = "salidaII" + i;
+    input3.name = "Salida II";
+    var input4 = document.createElement("input");
+    input4.type = "number";
+    input4.id = "salidaIII" + i;
+    input4.name = "Salida III";
+    var input5 = document.createElement("input");
+    input5.type = "number";
+    input5.id = "stock" + i;
+    input5.name = "Stock";
+    input5.readOnly = true;
+    // Añade el select y los inputs a las celdas
+    td1.appendChild(select);
+    td2.appendChild(input1);
+    td3.appendChild(input2);
+    td4.appendChild(input3);
+    td5.appendChild(input4);
+    td6.appendChild(input5);
+    // Añade las celdas a la fila
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    tr.appendChild(td5);
+    tr.appendChild(td6);
+    // Añade la fila al cuerpo de la tabla
+    tbody.appendChild(tr);
+}
+// Actualiza la función calculateStock para manejar varias filas
+function calculateStock() {
+    var totalStock = 0; // Variable para almacenar el stock total
+    for(var i = 0; i < 30; i++){
+        var invInic = document.getElementById("invInic" + i);
+        var salidaI = document.getElementById("salidaI" + i);
+        var salidaII = document.getElementById("salidaII" + i);
+        var salidaIII = document.getElementById("salidaIII" + i);
+        var stock = document.getElementById("stock" + i);
+        var codigo = document.querySelector('select[name="Codigo"] option:checked').value;
+        if (invInic && salidaI && salidaII && salidaIII && stock) {
+            var invInicValue = parseFloat(invInic.value) || 0;
+            var salidaIValue = parseFloat(salidaI.value) || 0;
+            var salidaIIValue = parseFloat(salidaII.value) || 0;
+            var salidaIIIValue = parseFloat(salidaIII.value) || 0;
+            var currentStock = invInicValue - salidaIValue - salidaIIValue - salidaIIIValue;
+            stock.value = currentStock; // Asigna el stock actual a la celda
+            totalStock += currentStock; // Agrega el stock actual al total
+        }
+    }
+    // Actualiza el valor del stock total mostrado en la página
+    document.getElementById("totalStock").textContent = totalStock;
+}
+// Asocia la función calculateStock a los eventos de entrada
+for(var i = 0; i < 30; i++){
+    var invInic = document.getElementById("invInic" + i);
+    var salidaI = document.getElementById("salidaI" + i);
+    var salidaII = document.getElementById("salidaII" + i);
+    var salidaIII = document.getElementById("salidaIII" + i);
+    if (invInic && salidaI && salidaII && salidaIII) {
+        invInic.oninput = calculateStock;
+        salidaI.oninput = calculateStock;
+        salidaII.oninput = calculateStock;
+        salidaIII.oninput = calculateStock;
+    }
+}
+
+</script>
+        
+      
+      
+      <style>.total-stock {
+  color: #333;
+  font-family: Jura, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+</style>
+      <section class="estadisticas-bodega-wrapper">
+        <p class="total-stock">Total Stock: <span id="totalStock">0</span></p>
+      </section>
+      <footer class="rectangle-group">
+        <div class="frame-item"></div>
+        <button class="conclude">
+          <a href="/creditos.html" class="conclude">
+          <img class="conclude-child" loading="lazy" alt="" src="/rectangle-21.f1322d2c.svg">
+          <div class="conclude1">Conclude</div>
+        </a></button>
+      </footer>
+    </div>
+  <script src="/metricas-bodega.bde739a5.js"></script></body>
+</html>
